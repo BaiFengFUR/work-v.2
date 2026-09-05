@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秋季社团招新报名</title>
+  <title>云南大学社团招新</title>
 </head>
 <body>
   <header>
@@ -22,7 +22,63 @@
     </section>
     <section id="form">
       <h2>报名表单</h2>
-      <p>（表单控件下一步填在这里）</p>
+      <form action="#" method="post">
+        <p>
+          姓名
+          <input type="text" name="name" placeholder="怎么称呼你">
+        </p>
+        <p>
+          邮箱
+          <input type="email" name="mail" placeholder="用于通知面试">
+        </p>
+        <p>
+          查询密码
+          <input type="password" name="querypwd" placeholder="之后查进度用">
+        </p>
+        <p>
+          入学年份
+          <input type="number" name="enrollYear" placeholder="例如 2024">
+        </p>
+        <p>
+          可面试日期
+          <input type="date" name="interviewDate">
+        </p>
+        <p>年级</p>
+        <p>
+          <input type="radio" name="grade" value="1" checked> 大一
+          <input type="radio" name="grade" value="2"> 大二
+          <input type="radio" name="grade" value="3"> 大三
+          <input type="radio" name="grade" value="4"> 大四
+        </p>
+        <p>可参与的方向（可多选）</p>
+        <p>
+          <input type="checkbox" name="skill" value="write"> 撰稿
+          <input type="checkbox" name="skill" value="photo"> 拍摄
+          <input type="checkbox" name="skill" value="volunteer"> 志愿
+          <input type="checkbox" name="skill" value="ball"> 篮球
+        </p>
+        <p>
+          意向社团
+          <select name="club">
+            <option value="">请选择</option>
+            <option value="literature">青木文学社</option>
+            <option value="photo">拾光摄影社</option>
+            <option value="volunteer">青行志愿社</option>
+            <option value="basketball">南风篮球队</option>
+          </select>
+        </p>
+        <p>
+          自我介绍
+          <textarea name="intro" rows="4" placeholder="为什么想加入，做过什么"></textarea>
+        </p>
+        <p>
+          附件（学生证或作品）
+          <input type="file" name="attachment">
+        </p>
+        <p>
+          <button type="submit">提交报名</button>
+        </p>
+      </form>
     </section>
   </main>
   <footer>
